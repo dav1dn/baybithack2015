@@ -1,5 +1,5 @@
 """
-Django settings for {{ project_name }} project on Heroku. Fore more info, see:
+Django settings for bithack project on Heroku. Fore more info, see:
 https://github.com/heroku/heroku-django-template
 
 For more information on this file, see
@@ -50,7 +50,7 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.security.SecurityMiddleware',
 )
 
-ROOT_URLCONF = '{{ project_name }}.urls'
+ROOT_URLCONF = 'bithack.urls'
 
 TEMPLATES = [
     {
@@ -68,7 +68,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = '{{ project_name}}.wsgi.application'
+WSGI_APPLICATION = 'bithack.wsgi.application'
 
 
 # Database
