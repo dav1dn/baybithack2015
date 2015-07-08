@@ -27,6 +27,7 @@ DEBUG = True
 
 TEMPLATE_DEBUG = True
 
+os.environ['DJANGO_SETTINGS_MODULE'] = 'bithack.settings'
 
 # Application definition
 
