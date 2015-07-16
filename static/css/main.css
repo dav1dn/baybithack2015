@@ -1,0 +1,107 @@
+/* line 8, C:/Users/David/Projects/baybithack2015/static/css/main.sass */
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif; }
+
+/* line 13, C:/Users/David/Projects/baybithack2015/static/css/main.sass */
+#particles-js {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0; }
+
+/* line 20, C:/Users/David/Projects/baybithack2015/static/css/main.sass */
+#nav {
+  width: 100%;
+  box-sizing: border-box;
+  position: fixed;
+  padding: 30px 80px 0px 80px;
+  z-index: 69;
+  color: #fff;
+  line-height: 43px; }
+
+/* line 29, C:/Users/David/Projects/baybithack2015/static/css/main.sass */
+#header-logo {
+  font-size: 2.7rem;
+  font-weight: 600;
+  float: left; }
+
+/* line 34, C:/Users/David/Projects/baybithack2015/static/css/main.sass */
+#nav-items {
+  float: right; }
+
+/* line 37, C:/Users/David/Projects/baybithack2015/static/css/main.sass */
+.nav-item {
+  display: block;
+  margin-left: 1.2rem;
+  float: left;
+  text-transform: uppercase; }
+
+/* line 43, C:/Users/David/Projects/baybithack2015/static/css/main.sass */
+#splash {
+  width: 100vw;
+  color: #fff;
+  min-height: 100vh;
+  text-align: center;
+  background: linear-gradient(329deg, #000000, #212121);
+  background-size: 600% 600%;
+  -webkit-animation: AnimationName 35s ease infinite;
+  -moz-animation: AnimationName 35s ease infinite;
+  -o-animation: AnimationName 35s ease infinite;
+  animation: AnimationName 35s ease infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 35%; }
+  50% {
+    background-position: 100% 66%; }
+  100% {
+    background-position: 0% 35%; } }
+
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 0% 35%; }
+  50% {
+    background-position: 100% 66%; }
+  100% {
+    background-position: 0% 35%; } }
+
+@-o-keyframes AnimationName {
+  0% {
+    background-position: 0% 35%; }
+  50% {
+    background-position: 100% 66%; }
+  100% {
+    background-position: 0% 35%; } }
+
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 35%; }
+  50% {
+    background-position: 100% 66%; }
+  100% {
+    background-position: 0% 35%; } }
+  /* line 77, C:/Users/David/Projects/baybithack2015/static/css/main.sass */
+  #splash button {
+    margin: 1rem 1.5rem 1rem 1.5rem;
+    color: #fff;
+    transition: all 0.5s ease; }
+    /* line 81, C:/Users/David/Projects/baybithack2015/static/css/main.sass */
+    #splash button:hover {
+      background-color: #f39c12;
+      color: #000;
+      border-color: #000; }
+
+/* line 86, C:/Users/David/Projects/baybithack2015/static/css/main.sass */
+#logo-img {
+  margin-bottom: 25px; }
+  /* line 88, C:/Users/David/Projects/baybithack2015/static/css/main.sass */
+  #logo-img img {
+    max-width: 720px; }
+
+/*# sourceMappingURL=main.css.map */

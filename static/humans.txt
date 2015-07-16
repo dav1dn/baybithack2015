@@ -1,0 +1,15 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+ 	David Nguyen      | Bitcoin Assn Of Berkeley, Communications Officer  | UC Berkeley, 2018
+ 	Max Fang          | Bitcoin Assn Of Berkeley, President               | UC Berkeley, 2018	
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5
+    SASS, Bourbon Neat
+    Modernizr, Normalize.css
+    
+    
