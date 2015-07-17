@@ -4,16 +4,25 @@
   align-items: center
   justify-content: center
 
+$primary-color: rgba(0,0,0,0.86)
+$accent-color: #f39c12
+$secondary-accent: #18559F
+$background-two: rgb(250,250,250)
 
 body
+    color: $primary-color
     padding: 0
     margin: 0
     font-family: 'Montserrat', sans-serif
+    accent
+        color: $secondary-accent
+    orange
+        color: $accent-color
     
 #particles-js
     width: 100%
     height: 100%
-    position: fixed
+    position: absolute
     top: 0
     left: 0
     
@@ -40,12 +49,24 @@ body
     float: left
     text-transform: uppercase
     
-#splash
+.panel 
     width: 100vw
+    padding: 80px 0px 80px 0px
+    box-sizing: border-box
+    text-align: center
+    p
+        text-align: left
+    h2
+        margin-bottom: 40px
+        
+
+        
+        
+#splash
     color: #fff
     min-height: 100vh
     text-align: center
-    background: linear-gradient(329deg, #000000, #212121)
+    background: linear-gradient(329deg, $primary-color, #212121)
     background-size: 600% 600%
     
     -webkit-animation: AnimationName 35s ease infinite
@@ -79,14 +100,41 @@ body
         color: #fff
         transition: all 0.5s ease
         &:hover
-            background-color: #f39c12
-            color: #000
-            border-color: #000
+            background-color: $accent-color
+            color: $primary-color
+            border-color: $primary-color
 
 #logo-img
     margin-bottom: 25px
     img
         max-width: 720px
+        
+#about-logos
+    +center-aligner
+
+
+div#about
+    +center-aligner
+    min-height: 650px
+    background-color: $background-two
+    p
+        text-align: center
+    strong
+        font-size: 1.1em
+        font-weight: 400
+        color: $accent-color
+
+
+    
+div#bitcoin
+    +center-aligner
+    background-color: $secondary-accent
+    color: #fff
+    
+
+    
+    
+    
 
     
     
