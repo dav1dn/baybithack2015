@@ -1,17 +1,19 @@
-/* line 12, C:/Users/David/Projects/baybithack2015/static/css/main.sass */
+/* line 15, C:/Users/David/Projects/baybithack2015/static/css/main.sass */
 body {
   color: rgba(0, 0, 0, 0.86);
-  padding: 0;
-  margin: 0;
   font-family: 'Montserrat', sans-serif; }
-  /* line 17, C:/Users/David/Projects/baybithack2015/static/css/main.sass */
+  /* line 18, C:/Users/David/Projects/baybithack2015/static/css/main.sass */
   body accent {
     color: #18559F; }
-  /* line 19, C:/Users/David/Projects/baybithack2015/static/css/main.sass */
+  /* line 20, C:/Users/David/Projects/baybithack2015/static/css/main.sass */
   body orange {
     color: #f39c12; }
 
-/* line 22, C:/Users/David/Projects/baybithack2015/static/css/main.sass */
+/* line 23, C:/Users/David/Projects/baybithack2015/static/css/main.sass */
+.container {
+  margin: 0; }
+
+/* line 26, C:/Users/David/Projects/baybithack2015/static/css/main.sass */
 #particles-js {
   width: 100%;
   height: 100%;
@@ -19,50 +21,69 @@ body {
   top: 0;
   left: 0; }
 
-/* line 29, C:/Users/David/Projects/baybithack2015/static/css/main.sass */
-#nav {
+/* line 33, C:/Users/David/Projects/baybithack2015/static/css/main.sass */
+.header {
   width: 100%;
   box-sizing: border-box;
+  padding: 25px 80px 0px 80px;
   position: fixed;
-  padding: 30px 80px 0px 80px;
-  z-index: 69;
+  z-index: 6969;
   color: #fff;
-  line-height: 43px; }
+  line-height: 43px;
+  transition: 0.3s linear; }
+  /* line 42, C:/Users/David/Projects/baybithack2015/static/css/main.sass */
+  .header a {
+    text-decoration: none;
+    color: #fff; }
+  /* line 45, C:/Users/David/Projects/baybithack2015/static/css/main.sass */
+  .header .active {
+    border-bottom: 2px #f39c12 solid; }
 
-/* line 38, C:/Users/David/Projects/baybithack2015/static/css/main.sass */
+/* line 48, C:/Users/David/Projects/baybithack2015/static/css/main.sass */
+.scrollHeader {
+  background-color: #000;
+  color: #fff;
+  padding: 0px 80px 0 80px; }
+  /* line 52, C:/Users/David/Projects/baybithack2015/static/css/main.sass */
+  .scrollHeader .active {
+    padding-bottom: 10px; }
+
+/* line 55, C:/Users/David/Projects/baybithack2015/static/css/main.sass */
 #header-logo {
   font-size: 2.7rem;
   font-weight: 600;
   float: left; }
 
-/* line 43, C:/Users/David/Projects/baybithack2015/static/css/main.sass */
+/* line 60, C:/Users/David/Projects/baybithack2015/static/css/main.sass */
 #nav-items {
+  margin: 0;
   float: right; }
 
-/* line 46, C:/Users/David/Projects/baybithack2015/static/css/main.sass */
+/* line 64, C:/Users/David/Projects/baybithack2015/static/css/main.sass */
 .nav-item {
   display: block;
   margin-left: 1.2rem;
+  margin-bottom: 0;
   float: left;
   text-transform: uppercase; }
 
-/* line 52, C:/Users/David/Projects/baybithack2015/static/css/main.sass */
+/* line 71, C:/Users/David/Projects/baybithack2015/static/css/main.sass */
 .panel {
   width: 100vw;
   padding: 80px 0px 80px 0px;
   box-sizing: border-box;
   text-align: center; }
-  /* line 57, C:/Users/David/Projects/baybithack2015/static/css/main.sass */
+  /* line 76, C:/Users/David/Projects/baybithack2015/static/css/main.sass */
   .panel p {
     text-align: left; }
-  /* line 59, C:/Users/David/Projects/baybithack2015/static/css/main.sass */
+  /* line 78, C:/Users/David/Projects/baybithack2015/static/css/main.sass */
   .panel h2 {
     margin-bottom: 40px; }
 
-/* line 65, C:/Users/David/Projects/baybithack2015/static/css/main.sass */
+/* line 81, C:/Users/David/Projects/baybithack2015/static/css/main.sass */
 #splash {
   color: #fff;
-  min-height: 100vh;
+  height: 100vh;
   text-align: center;
   background: linear-gradient(329deg, rgba(0, 0, 0, 0.86), #212121);
   background-size: 600% 600%;
@@ -70,9 +91,12 @@ body {
   -moz-animation: AnimationName 35s ease infinite;
   -o-animation: AnimationName 35s ease infinite;
   animation: AnimationName 35s ease infinite;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  -ms-flex-pack: center; }
 
 @-webkit-keyframes AnimationName {
   0% {
@@ -105,52 +129,70 @@ body {
     background-position: 100% 66%; }
   100% {
     background-position: 0% 35%; } }
-  /* line 98, C:/Users/David/Projects/baybithack2015/static/css/main.sass */
+  /* line 114, C:/Users/David/Projects/baybithack2015/static/css/main.sass */
   #splash button {
     margin: 1rem 1.5rem 1rem 1.5rem;
     color: #fff;
     transition: all 0.5s ease; }
-    /* line 102, C:/Users/David/Projects/baybithack2015/static/css/main.sass */
+    /* line 118, C:/Users/David/Projects/baybithack2015/static/css/main.sass */
     #splash button:hover {
       background-color: #f39c12;
       color: rgba(0, 0, 0, 0.86);
       border-color: rgba(0, 0, 0, 0.86); }
 
-/* line 107, C:/Users/David/Projects/baybithack2015/static/css/main.sass */
+/* line 123, C:/Users/David/Projects/baybithack2015/static/css/main.sass */
 #logo-img {
   margin-bottom: 25px; }
-  /* line 109, C:/Users/David/Projects/baybithack2015/static/css/main.sass */
+  /* line 125, C:/Users/David/Projects/baybithack2015/static/css/main.sass */
   #logo-img img {
     max-width: 720px; }
 
-/* line 112, C:/Users/David/Projects/baybithack2015/static/css/main.sass */
+/* line 128, C:/Users/David/Projects/baybithack2015/static/css/main.sass */
 #about-logos {
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-
-/* line 116, C:/Users/David/Projects/baybithack2015/static/css/main.sass */
-div#about {
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   align-items: center;
   justify-content: center;
+  -ms-flex-pack: center; }
+
+/* line 132, C:/Users/David/Projects/baybithack2015/static/css/main.sass */
+div#about {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -ms-flex-pack: center;
   min-height: 650px;
   background-color: #fafafa; }
-  /* line 120, C:/Users/David/Projects/baybithack2015/static/css/main.sass */
+  /* line 136, C:/Users/David/Projects/baybithack2015/static/css/main.sass */
   div#about p {
     text-align: center; }
-  /* line 122, C:/Users/David/Projects/baybithack2015/static/css/main.sass */
+  /* line 138, C:/Users/David/Projects/baybithack2015/static/css/main.sass */
   div#about strong {
     font-size: 1.1em;
     font-weight: 400;
     color: #f39c12; }
 
-/* line 129, C:/Users/David/Projects/baybithack2015/static/css/main.sass */
+/* line 143, C:/Users/David/Projects/baybithack2015/static/css/main.sass */
 div#bitcoin {
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   align-items: center;
   justify-content: center;
+  -ms-flex-pack: center;
   background-color: #18559F;
   color: #fff; }
+
+/* line 148, C:/Users/David/Projects/baybithack2015/static/css/main.sass */
+img#bitcoin-network {
+  height: 490px;
+  width: auto; }
+
+/* line 152, C:/Users/David/Projects/baybithack2015/static/css/main.sass */
+div#placeholder {
+  height: 2000px; }
 
 /*# sourceMappingURL=main.css.map */

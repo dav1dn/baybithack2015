@@ -1,8 +1,11 @@
     
 =center-aligner() 
-  display: flex
-  align-items: center
-  justify-content: center
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex
+    align-items: center
+    justify-content: center
+    -ms-flex-pack: center
 
 $primary-color: rgba(0,0,0,0.86)
 $accent-color: #f39c12
@@ -11,13 +14,14 @@ $background-two: rgb(250,250,250)
 
 body
     color: $primary-color
-    padding: 0
-    margin: 0
     font-family: 'Montserrat', sans-serif
     accent
         color: $secondary-accent
     orange
         color: $accent-color
+        
+.container
+    margin: 0
     
 #particles-js
     width: 100%
@@ -26,14 +30,27 @@ body
     top: 0
     left: 0
     
-#nav
+.header
     width: 100%
     box-sizing: border-box
+    padding: 25px 80px 0px 80px
     position: fixed
-    padding: 30px 80px 0px 80px
-    z-index: 69
+    z-index: 6969
     color: #fff
     line-height: 43px
+    transition: 0.3s linear
+    a
+        text-decoration: none
+        color: #fff
+    .active
+        border-bottom: 2px $accent-color solid
+        
+.scrollHeader
+    background-color: #000
+    color: #fff
+    padding: 0px 80px 0 80px
+    .active
+        padding-bottom: 10px
     
 #header-logo
     font-size: 2.7rem
@@ -41,11 +58,13 @@ body
     float: left
         
 #nav-items
+    margin: 0
     float: right
     
 .nav-item
     display: block
     margin-left: 1.2rem
+    margin-bottom: 0
     float: left
     text-transform: uppercase
     
@@ -58,13 +77,10 @@ body
         text-align: left
     h2
         margin-bottom: 40px
-        
 
-        
-        
 #splash
     color: #fff
-    min-height: 100vh
+    height: 100vh
     text-align: center
     background: linear-gradient(329deg, $primary-color, #212121)
     background-size: 600% 600%
@@ -124,14 +140,17 @@ div#about
         font-weight: 400
         color: $accent-color
 
-
-    
 div#bitcoin
     +center-aligner
     background-color: $secondary-accent
     color: #fff
     
-
+img#bitcoin-network
+    height: 490px
+    width: auto
+    
+div#placeholder
+    height: 2000px
     
     
     
