@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="">
     <head>
         <meta charset="utf-8">
@@ -7,6 +7,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Hind:400,500,600' rel='stylesheet' type='text/css'>
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
         <link rel="stylesheet" href="css/normalize.css">
@@ -18,20 +19,20 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <nav>
-            <div id="nav">
+        <div class="header" id="navbar">
+            <nav id="nav">
                 <div id="header-logo">Bay Bit Hack</div>
-                <div id="nav-items">
-                    <div class="nav-item">Home</div>
-                    <div class="nav-item">About</div>
-                    <div class="nav-item">Bitcoin</div>
-                    <div class="nav-item">Register</div>
-                    <div class="nav-item">Sponsor</div>
-                    <div class="nav-item">FAQ</div>
-                </div>
-            </div>
-        </nav>
-        <div class="panel" id="splash">
+                <ul id="nav-items">
+                    <li class="nav-item"><a data-scroll-nav="0" href="#splash">Home</a></li>
+                    <li class="nav-item"><a data-scroll-nav="1" href="#about">About</a></li>
+                    <li class="nav-item"><a data-scroll-nav="2" href="#bitcoin">Bitcoin</a></li>
+                    <li class="nav-item">Register</li>
+                    <li class="nav-item">Sponsor</li>
+                    <li class="nav-item">FAQ</li>
+                </ul>
+            </nav>
+        </div>
+        <div class="panel" id="splash" data-scroll-index="0">
             <div id="particles-js"></div>
             <div class="logo container">
                 <div id="logo-img">
@@ -47,6 +48,41 @@
                 </div>
             </div>
         </div>
+        <div class="panel scrollto" id="about" data-scroll-index="1">
+            <div class="container">
+                <h2>What's a Bay Bit Hack?</h2>
+                <div class="row" id="about-content">
+                    <div class="eight columns ">
+                        <p>Bay Bit Hack is the <accent>first ever university hackathon dedicated to Bitcoin</accent> in the United States. Beginning as a collaborate effort between the Bitcoin Assocation of Berkeley and the College Cryptocurrency Network, we're the premier cryptocurrency hackathon in the Bay Area. No previous experience with Bitcoin is necessary, only a desire to join the ranks of a rapidly growing number of outstanding developers and entrepreneurs building on the future of money.</p><strong>It's about time that universities started paying attention to Bitcoin.</strong>
+                    </div>
+                    <div class="four columns">
+                        <img src="img/bab-logo.png" class="u-max-full-width">
+                        <img src="img/ccn.png" class="u-max-full-width">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel scrollto" id="bitcoin" data-scroll-index="2">
+            <div class="container">
+                <h2>Alright.. What's a Bitcoin?</h2>
+                <div class="row">
+                    <div class="seven columns"><p>Bitcoin is a <orange>currency</orange>. A <orange>technology</orange>. A <orange>protocol of the future</orange>.</p>
+                        <p>Bitcoin is a peer to peer online currency that can be sent and received by anyone in the world, relying on computers to control the transfer and creation of money without human intervention. This results in negligible transaction fees, no government corruption, and lightning-speed transfer of your digital property. Bitcoin is reimagining the financial system in the Internet era.</p>
+
+                        <p>All over Silicon Valley and around the world, many thousands of programmers are using Bitcoin as a building block for a kaleidoscope of new product and service ideas that were not possible before.</p>
+
+                        <p>Bay BitHack will teach hackers how to work with the Bitcoin protocol in order to develop services that revolutionize personal banking, remittance, micropayments, and beyond.</p>
+                    </div>
+                    <div class="five columns" style="text-align: right">
+                        <img src="img/bitcoin-network.png" class="u-max-full-width" id="bitcoin-network">
+                    </div>
+                </div>
+             </div>
+        </div>
+        <div class="panel" id="placeholder">
+            
+        </div>
+    </div>
 
       
       
@@ -54,8 +90,9 @@
 
     </body>
     <foot>
+        
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+        <script src="js/scrollit.js"></script>
         <script src="js/particles.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>

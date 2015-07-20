@@ -1,30 +1,66 @@
     
 =center-aligner() 
-  display: flex
-  align-items: center
-  justify-content: center
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex
+    align-items: center
+    justify-content: center
+    -ms-flex-pack: center
 
+$primary-color: rgba(0,0,0,0.86)
+$accent-color: #f39c12
+$secondary-accent: #18559F
+$background-two: rgb(250,250,250)
 
 body
-    padding: 0
+    color: $primary-color
+    font-family: 'Hind', sans-serif
+    font-size: 1.8em
+    line-height: 1.7em
+    accent
+        color: $secondary-accent
+    orange
+        color: $accent-color
+    h1, h2, h3, h4, h5, h6
+        font-family: 'Montserrat', sans-serif
+
+        
+.container
     margin: 0
-    font-family: 'Montserrat', sans-serif
     
 #particles-js
     width: 100%
     height: 100%
-    position: fixed
+    position: absolute
     top: 0
     left: 0
     
-#nav
+.header
     width: 100%
     box-sizing: border-box
+    padding: 25px 80px 0px 80px
     position: fixed
-    padding: 30px 80px 0px 80px
-    z-index: 69
+    z-index: 6969
     color: #fff
     line-height: 43px
+    transition: 0.3s linear
+    a
+        text-decoration: none
+        color: #fff
+    .active
+        border-bottom: 2px $accent-color solid
+
+
+        
+.scrollHeader
+    background-color: #000
+    color: #fff
+    padding: 0px 80px 0 80px
+    -webkit-box-shadow: 0px 3px 5px rgba(100, 100, 100, 0.49)
+    -moz-box-shadow:    0px 3px 5px rgba(100, 100, 100, 0.49)
+    box-shadow:         0px 3px 5px rgba(0, 0, 0, 0.3)
+    .active
+        padding-bottom: 5px
     
 #header-logo
     font-size: 2.7rem
@@ -32,20 +68,31 @@ body
     float: left
         
 #nav-items
+    margin: 0
     float: right
     
 .nav-item
     display: block
     margin-left: 1.2rem
+    margin-bottom: 0
     float: left
     text-transform: uppercase
     
-#splash
+.panel 
     width: 100vw
-    color: #fff
-    min-height: 100vh
+    padding: 80px 0px 80px 0px
+    box-sizing: border-box
     text-align: center
-    background: linear-gradient(329deg, #000000, #212121)
+    p
+        text-align: left
+    h2
+        margin-bottom: 45px
+
+#splash
+    color: #fff
+    height: 100vh
+    text-align: center
+    background: linear-gradient(329deg, #000, #313131)
     background-size: 600% 600%
     
     -webkit-animation: AnimationName 35s ease infinite
@@ -75,18 +122,45 @@ body
     
     +center-aligner
     button
-        margin: 1rem 1.5rem 1rem 1.5rem
+        margin: 1rem 1.25rem 1rem 1.25rem
         color: #fff
         transition: all 0.5s ease
         &:hover
-            background-color: #f39c12
-            color: #000
-            border-color: #000
+            background-color: $accent-color
+            color: $primary-color
+            border-color: $primary-color
 
 #logo-img
     margin-bottom: 25px
     img
         max-width: 720px
+        
+#about-content
+    +center-aligner
+    
+div#about
+    +center-aligner
+    min-height: 650px
+    background-color: $background-two
+    strong
+        font-size: 1.1em
+        font-weight: 400
+        color: $accent-color
+
+div#bitcoin
+    +center-aligner
+    background-color: $secondary-accent
+    color: #fff
+    
+img#bitcoin-network
+    height: 490px
+    width: auto
+    
+div#placeholder
+    height: 2000px
+    
+    
+    
 
     
     

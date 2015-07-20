@@ -108,3 +108,21 @@ particlesJS("particles-js", {
   },
   "retina_detect": true
 });
+
+$(function () {
+    $.scrollIt({
+        easing: 'linear',
+        scrollTime: 400,
+        activeClass: 'active',
+        topOffset: -43
+    });
+});
+
+$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+    if (scroll >= 68) {
+        $("#navbar").addClass("scrollHeader");
+    } else {
+        $("#navbar").removeClass("scrollHeader");
+    }
+});
