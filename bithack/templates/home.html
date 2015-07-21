@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html class="no-js" lang="">
+    {% load staticfiles %}
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -10,10 +11,10 @@
         <link href='http://fonts.googleapis.com/css?family=Hind:400,500,600' rel='stylesheet' type='text/css'>
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/skeleton.css">
-        <link rel="stylesheet" href="css/main.css">
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="{% static 'css/normalize.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/skeleton.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+        <script src="{% static 'js/vendor/modernizr-2.8.3.min.js' %}"></script>
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -36,7 +37,7 @@
             <div id="particles-js"></div>
             <div class="logo container">
                 <div id="logo-img">
-                    <img src="img/logo-light.png">
+                  <img src="{% static 'img/logo-light.png' %}">
                 </div>
                 <div class="row">
                     <h4>November 1 | UC Berkeley</h4>
@@ -56,8 +57,8 @@
                         <p>Bay Bit Hack is the <accent>first ever university hackathon dedicated to Bitcoin</accent> in the United States. Beginning as a collaborate effort between the Bitcoin Assocation of Berkeley and the College Cryptocurrency Network, we're the premier cryptocurrency hackathon in the Bay Area. No previous experience with Bitcoin is necessary, only a desire to join the ranks of a rapidly growing number of outstanding developers and entrepreneurs building on the future of money.</p><strong>It's about time that universities started paying attention to Bitcoin.</strong>
                     </div>
                     <div class="four columns">
-                        <img src="img/bab-logo.png" class="u-max-full-width">
-                        <img src="img/ccn.png" class="u-max-full-width">
+                      <img src="{% static 'img/bab-logo.png' %}" class="u-max-full-width">
+                      <img src="{% static 'img/ccn.png' %}" class="u-max-full-width">
                     </div>
                 </div>
             </div>
@@ -74,7 +75,7 @@
                         <p>Bay BitHack will teach hackers how to work with the Bitcoin protocol in order to develop services that revolutionize personal banking, remittance, micropayments, and beyond.</p>
                     </div>
                     <div class="five columns" style="text-align: right">
-                        <img src="img/bitcoin-network.png" class="u-max-full-width" id="bitcoin-network">
+                      <img src="{% static 'img/bitcoin-network.png' %}" class="u-max-full-width" id="bitcoin-network">
                     </div>
                 </div>
              </div>
@@ -92,10 +93,10 @@
     <foot>
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script src="js/scrollit.js"></script>
-        <script src="js/particles.js"></script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+        <script src="{% static 'js/scrollit.js' %}"></script>
+        <script src="{% static 'js/particles.js' %}"></script>
+        <script src="{% static 'js/plugins.js' %}"></script>
+        <script src="{% static 'js/main.js' %}"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
