@@ -17,3 +17,4 @@ class RegisterForm(forms.Form):
     school = forms.CharField(label="School", max_length=256)
     tshirt_size = forms.CharField(label="T-shirt size", max_length=30, choices=TSHIRT_SIZE_CHOICES)
     vegetarian = forms.BooleanField(label="Vegetarian options", default=False)
+    source = forms.CharField(label="Where did you hear about this event?", max_length=256)
