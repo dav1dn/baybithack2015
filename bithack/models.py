@@ -1,4 +1,4 @@
-from django.contrib.auth import User
+from django.contrib.auth.models import User
 from django.db import models
 
 
@@ -17,7 +17,6 @@ class Hacker(models.Model):
     last_name = models.CharField(max_length=100)
 
     email = models.EmailField(max_length=254)
-    email = models.CharField(max_length=256)
     school = models.CharField(max_length=256)
     tshirt_size = models.CharField(max_length=30, choices=TSHIRT_SIZE_CHOICES)
     vegetarian = models.BooleanField(default=False)
