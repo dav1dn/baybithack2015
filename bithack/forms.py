@@ -1,3 +1,4 @@
+# pylint: disable=line-too-long
 from django import forms
 
 
@@ -11,9 +12,9 @@ class RegisterForm(forms.Form):
         ('extra large', "Adult Extra Large"),
     )
 
-    name = forms.CharField(label="Full Name", max_length=100)
-    # TODO change this to email field
-    email = forms.CharField(label="Email", max_length=256)
+    first_name = forms.CharField(label="First Name", max_length=100)
+    last_name = forms.CharField(label="Last Name", max_length=100)
+    email = forms.EmailField(label="Email", max_length=254)
     school = forms.CharField(label="School", max_length=256)
     tshirt_size = forms.CharField(label="T-shirt size", max_length=30, choices=TSHIRT_SIZE_CHOICES)
     vegetarian = forms.BooleanField(label="Vegetarian options", default=False)
