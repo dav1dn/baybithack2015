@@ -1,1 +1,1 @@
--web: gunicorn bithack.wsgi --log-file -
+web: gunicorn bithack.wsgi --log-file -
