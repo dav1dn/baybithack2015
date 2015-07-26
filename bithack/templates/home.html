@@ -85,8 +85,11 @@
         </div>
     </div>
 
-      
-      
+    <form action="/" method="post">
+        {% csrf_token %}
+        {{ register_form }}
+        <input type="submit" value="Submit"/>
+    </form>
   
 
     </body>
