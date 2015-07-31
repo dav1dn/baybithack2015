@@ -8,7 +8,8 @@ from django.template import RequestContext
 def index(request):
 
     if request.method == 'POST':
-        # TODO check handling for registrant submission
+        # TODO make Register Form into HackerForm that's a modelForm
+        # TODO make another form for user registration to handle the user creation
         form = RegisterForm(request.POST)
         if form.is_valid():
             return HttpResponseRedirect('/success')

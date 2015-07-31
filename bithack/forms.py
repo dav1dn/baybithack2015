@@ -1,4 +1,5 @@
 # pylint: disable=line-too-long
+from bithack import Hacker
 from django import forms
 
 
