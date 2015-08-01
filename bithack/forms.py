@@ -1,6 +1,6 @@
 # pylint: disable=line-too-long
-from bithack import Hacker
 from django import forms
+from django.forms.extras.widgets import PasswordInput
 
 
 class RegisterForm(forms.Form):
@@ -20,3 +20,5 @@ class RegisterForm(forms.Form):
     tshirt_size = forms.ChoiceField(label="T-shirt size", choices=TSHIRT_SIZE_CHOICES)
     vegetarian = forms.BooleanField(label="Check if you are a vegetarian", required=False)
     source = forms.CharField(label="Where did you hear about this event?", max_length=256)
+    password = forms.CharField(label="Password for your Bay Bithack account", max_length=256,
+            widget=PasswordInput())
