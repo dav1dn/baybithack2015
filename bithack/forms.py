@@ -1,6 +1,6 @@
 # pylint: disable=line-too-long
 from django import forms
-from django.forms.extras.widgets import PasswordInput
+from django.forms.widgets import PasswordInput
 
 
 class RegisterForm(forms.Form):
