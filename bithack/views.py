@@ -1,5 +1,6 @@
 from bithack.forms import RegisterForm
 
+from django.contrib.auth.models import User
 from django.http import HttpResponseRedirect, HttpResponseBadRequest
 from django.shortcuts import render_to_response
 from django.template import RequestContext
@@ -12,6 +13,7 @@ def index(request):
         # TODO make another form for user registration to handle the user creation
         form = RegisterForm(request.POST)
         if form.is_valid():
+            User.objects.create_user(username=request.POST['username'], password=request.POST['password'])
             return HttpResponseRedirect('/success')
         else:
             response = HttpResponseBadRequest()
