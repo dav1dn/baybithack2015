@@ -36,3 +36,10 @@ def index(request):
     context = {'register_form': register_form}
 
     return render_to_response("index.html", context, RequestContext(request))
+
+
+def success(request):
+
+    context = {}
+
+    return render_to_response("success.html", context, RequestContext(request))
