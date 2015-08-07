@@ -21,3 +21,4 @@ class Hacker(models.Model):
     tshirt_size = models.CharField(max_length=30, choices=TSHIRT_SIZE_CHOICES)
     vegetarian = models.BooleanField(default=False)
     source = models.CharField(max_length=256)
+    resume = models.FileField(null=True, blank=True)
