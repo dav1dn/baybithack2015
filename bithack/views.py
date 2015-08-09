@@ -11,7 +11,7 @@ def index(request):
 
     if request.method == 'POST':
         # TODO make Register Form into HackerForm that's a modelForm
-        form = RegisterForm(request.POST)
+        form = RegisterForm(request.POST, request.FILES)
         if form.is_valid():
 
             hacker_user = User.objects.create_user(username=request.POST['username'], password=request.POST['password'])

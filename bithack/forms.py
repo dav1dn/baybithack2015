@@ -22,3 +22,4 @@ class RegisterForm(forms.Form):
     source = forms.CharField(label="Where did you hear about this event?", max_length=256)
     password = forms.CharField(label="Password for your Bay Bithack account", max_length=256,
             widget=PasswordInput())
+    resume = forms.FileField(required=False)
