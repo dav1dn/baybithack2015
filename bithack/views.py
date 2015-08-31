@@ -10,7 +10,6 @@ from django.template import RequestContext
 def index(request):
 
     if request.method == 'POST':
-        # TODO make Register Form into HackerForm that's a modelForm
         form = RegisterForm(request.POST, request.FILES)
         if form.is_valid():
 
@@ -40,6 +39,8 @@ def index(request):
 
 def success(request):
 
-    context = {}
+    context = {
+        'user': request.user
+    }
 
     return render_to_response("success.html", context, RequestContext(request))
