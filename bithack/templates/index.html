@@ -85,11 +85,13 @@
         </div>
     </div>
 
+    {% if request.user.is_authenticated %}
     <form action="/" method="post">
         {% csrf_token %}
         {{ register_form }}
         <input type="submit" value="Submit"/>
     </form>
+    {% endif %}
   
 
     </body>
