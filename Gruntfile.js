@@ -13,7 +13,9 @@ module.exports = function(grunt) {
         sass: {
             build: {
                 options: {
-                    style: 'expanded'
+                    style: 'expanded',
+                    lineNumbers: true,
+                    sourcemap: 'none'
                 },
                 files: [{
                     expand: true, // all files in dir

@@ -8,10 +8,12 @@
 
 $primary-color: rgba(0,0,0,0.86)
 $accent-color: #f39c12
-$secondary-accent: #18559F
+$secondary-accent: #18559f
 $background-two: rgb(250,250,250)
 
 body
+  margin: 0
+  padding: 0
   color: $primary-color
   font-family: 'Hind', sans-serif
   font-size: 1.8em
@@ -40,7 +42,7 @@ body
   position: fixed
   z-index: 6969
   color: #fff
-  line-height: 43px
+  line-height: 36px
   transition: 0.3s linear
   a
     text-decoration: none
@@ -51,21 +53,23 @@ body
 
     
 .scrollHeader
-  background-color: #000
+  background-image: -webkit-linear-gradient(top, rgba(255,255,255,0.2), rgba(255,255,255,0))
   color: #fff
   padding: 0px 80px 0 80px
-  -webkit-box-shadow: 0px 3px 5px rgba(100, 100, 100, 0.49)
-  -moz-box-shadow:  0px 3px 5px rgba(100, 100, 100, 0.49)
-  box-shadow:     0px 3px 5px rgba(0, 0, 0, 0.3)
+  //-webkit-box-shadow: 0px 3px 5px rgba(100, 100, 100, 0.49)
+  //-moz-box-shadow:  0px 3px 5px rgba(100, 100, 100, 0.49)
+  //box-shadow:     0px 3px 5px rgba(0, 0, 0, 0.3)
   .active
     padding-bottom: 5px
   
 #header-logo
+  padding-top: 7px
   font-size: 2.7rem
   font-weight: 600
   float: left
     
 #nav-items
+  padding-top: 5px
   margin: 0
   float: right
   
@@ -77,8 +81,10 @@ body
   text-transform: uppercase
   
 .panel 
+  margin: 0
   width: 100vw
-  padding: 80px 0px 80px 0px
+  max-width: 100%
+  padding: 95px 0px 95px 0px
   box-sizing: border-box
   text-align: center
   p
@@ -88,47 +94,12 @@ body
 
 #splash
   color: #fff
-  height: 100vh
+  height: 60vh
+  min-height: 720px
   text-align: center
-  background: linear-gradient(329deg, #000, #313131)
-  background-size: 600% 600%
-  
-  -webkit-animation: AnimationName 35s ease infinite
-  -moz-animation: AnimationName 35s ease infinite
-  -o-animation: AnimationName 35s ease infinite
-  animation: AnimationName 35s ease infinite
-
-  @-webkit-keyframes AnimationName 
-    0%
-      background-position: 0% 35%
-    50%
-      background-position: 100% 66%
-    100%
-      background-position: 0% 35%
-  
-  @-moz-keyframes AnimationName 
-    0%
-      background-position: 0% 35%
-    50%
-      background-position: 100% 66%
-    100%
-      background-position: 0% 35%
-  
-  @-o-keyframes AnimationName 
-    0%
-      background-position: 0% 35%
-    50%
-      background-position: 100% 66%
-    100%
-      background-position: 0% 35%
-  
-  @keyframes AnimationName 
-    0%
-      background-position: 0% 35%
-    50%
-      background-position: 100% 66%
-    100%
-      background-position: 0% 35%
+  //background: linear-gradient(329deg, #000, #313131)
+  background-image: -webkit-linear-gradient(top,#3769a5,rgba(55,105,165,0.5))
+  //background-size: 600% x00%
   
   +center-aligner
   button
@@ -137,8 +108,7 @@ body
     transition: all 0.5s ease
     &:hover
       background-color: $accent-color
-      color: $primary-color
-      border-color: $primary-color
+      color: $background-two
 
 #logo-img
   margin-bottom: 25px
@@ -150,8 +120,8 @@ body
   
 div#about
   +center-aligner
-  min-height: 650px
-  background-color: $background-two
+  //background-color: $background-two
+  background-image: -webkit-linear-gradient(top,rgba(55,105,165,0.5),#ffffff)
   strong
     font-size: 1.1em
     font-weight: 400
@@ -159,11 +129,15 @@ div#about
 
 div#bitcoin
   +center-aligner
-  background-color: $secondary-accent
-  color: #fff
-  
+
+#bitcoin-img
+  position: relative
+
 img#bitcoin-network
   height: 490px
+  position: absolute
+  left: 0
+  top: 0
   width: auto
   
 div#placeholder

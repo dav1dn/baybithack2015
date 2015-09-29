@@ -1,23 +1,31 @@
+/* line 14, main.sass */
 body {
+  margin: 0;
+  padding: 0;
   color: rgba(0, 0, 0, 0.86);
   font-family: "Hind", sans-serif;
   font-size: 1.8em;
   line-height: 1.7em;
 }
+/* line 21, main.sass */
 body accent {
-  color: #18559F;
+  color: #18559f;
 }
+/* line 23, main.sass */
 body orange {
   color: #f39c12;
 }
+/* line 25, main.sass */
 body h1, body h2, body h3, body h4, body h5, body h6 {
   font-family: "Montserrat", sans-serif;
 }
 
+/* line 28, main.sass */
 .container {
   margin: 0;
 }
 
+/* line 31, main.sass */
 #particles-js {
   width: 100%;
   height: 100%;
@@ -26,6 +34,7 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
   left: 0;
 }
 
+/* line 38, main.sass */
 .header {
   width: 100%;
   box-sizing: border-box;
@@ -33,40 +42,46 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
   position: fixed;
   z-index: 6969;
   color: #fff;
-  line-height: 43px;
+  line-height: 36px;
   transition: 0.3s linear;
 }
+/* line 47, main.sass */
 .header a {
   text-decoration: none;
   color: #fff;
 }
+/* line 50, main.sass */
 .header .active {
   border-bottom: 2px #f39c12 solid;
 }
 
+/* line 55, main.sass */
 .scrollHeader {
-  background-color: #000;
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
   color: #fff;
   padding: 0px 80px 0 80px;
-  -webkit-box-shadow: 0px 3px 5px rgba(100, 100, 100, 0.49);
-  -moz-box-shadow: 0px 3px 5px rgba(100, 100, 100, 0.49);
-  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
 }
+/* line 62, main.sass */
 .scrollHeader .active {
   padding-bottom: 5px;
 }
 
+/* line 65, main.sass */
 #header-logo {
+  padding-top: 7px;
   font-size: 2.7rem;
   font-weight: 600;
   float: left;
 }
 
+/* line 71, main.sass */
 #nav-items {
+  padding-top: 5px;
   margin: 0;
   float: right;
 }
 
+/* line 76, main.sass */
 .nav-item {
   display: block;
   margin-left: 1.2rem;
@@ -75,29 +90,31 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
   text-transform: uppercase;
 }
 
+/* line 83, main.sass */
 .panel {
+  margin: 0;
   width: 100vw;
-  padding: 80px 0px 80px 0px;
+  max-width: 100%;
+  padding: 95px 0px 95px 0px;
   box-sizing: border-box;
   text-align: center;
 }
+/* line 90, main.sass */
 .panel p {
   text-align: left;
 }
+/* line 92, main.sass */
 .panel h2 {
   margin-bottom: 45px;
 }
 
+/* line 95, main.sass */
 #splash {
   color: #fff;
-  height: 100vh;
+  height: 60vh;
+  min-height: 720px;
   text-align: center;
-  background: linear-gradient(329deg, #000, #313131);
-  background-size: 600% 600%;
-  -webkit-animation: AnimationName 35s ease infinite;
-  -moz-animation: AnimationName 35s ease infinite;
-  -o-animation: AnimationName 35s ease infinite;
-  animation: AnimationName 35s ease infinite;
+  background-image: -webkit-linear-gradient(top, #3769a5, rgba(55, 105, 165, 0.5));
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
@@ -105,68 +122,28 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
   justify-content: center;
   -ms-flex-pack: center;
 }
-@-webkit-keyframes AnimationName {
-  0% {
-    background-position: 0% 35%;
-  }
-  50% {
-    background-position: 100% 66%;
-  }
-  100% {
-    background-position: 0% 35%;
-  }
-}
-@-moz-keyframes AnimationName {
-  0% {
-    background-position: 0% 35%;
-  }
-  50% {
-    background-position: 100% 66%;
-  }
-  100% {
-    background-position: 0% 35%;
-  }
-}
-@-o-keyframes AnimationName {
-  0% {
-    background-position: 0% 35%;
-  }
-  50% {
-    background-position: 100% 66%;
-  }
-  100% {
-    background-position: 0% 35%;
-  }
-}
-@keyframes AnimationName {
-  0% {
-    background-position: 0% 35%;
-  }
-  50% {
-    background-position: 100% 66%;
-  }
-  100% {
-    background-position: 0% 35%;
-  }
-}
+/* line 105, main.sass */
 #splash button {
   margin: 1rem 1.25rem 1rem 1.25rem;
   color: #fff;
   transition: all 0.5s ease;
 }
+/* line 109, main.sass */
 #splash button:hover {
   background-color: #f39c12;
-  color: rgba(0, 0, 0, 0.86);
-  border-color: rgba(0, 0, 0, 0.86);
+  color: #fafafa;
 }
 
+/* line 113, main.sass */
 #logo-img {
   margin-bottom: 25px;
 }
+/* line 115, main.sass */
 #logo-img img {
   max-width: 720px;
 }
 
+/* line 118, main.sass */
 #about-content {
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -176,6 +153,7 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
   -ms-flex-pack: center;
 }
 
+/* line 121, main.sass */
 div#about {
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -183,15 +161,16 @@ div#about {
   align-items: center;
   justify-content: center;
   -ms-flex-pack: center;
-  min-height: 650px;
-  background-color: #fafafa;
+  background-image: -webkit-linear-gradient(top, rgba(55, 105, 165, 0.5), #ffffff);
 }
+/* line 125, main.sass */
 div#about strong {
   font-size: 1.1em;
   font-weight: 400;
   color: #f39c12;
 }
 
+/* line 130, main.sass */
 div#bitcoin {
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -199,17 +178,23 @@ div#bitcoin {
   align-items: center;
   justify-content: center;
   -ms-flex-pack: center;
-  background-color: #18559F;
-  color: #fff;
 }
 
+/* line 133, main.sass */
+#bitcoin-img {
+  position: relative;
+}
+
+/* line 136, main.sass */
 img#bitcoin-network {
   height: 490px;
+  position: absolute;
+  left: 0;
+  top: 0;
   width: auto;
 }
 
+/* line 143, main.sass */
 div#placeholder {
   height: 2000px;
 }
-
-/*# sourceMappingURL=main.css.map */
