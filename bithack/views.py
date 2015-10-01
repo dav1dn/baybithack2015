@@ -9,8 +9,4 @@ def index(request):
 
 def success(request):
 
-    context = {
-        'user': request.user
-    }
-
-    return render_to_response("success.html", context, RequestContext(request))
+    return render_to_response("success.html", {}, RequestContext(request))
