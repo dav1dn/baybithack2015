@@ -57,16 +57,20 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
 
 /* line 55, main.sass */
 .scrollHeader {
-  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
-  color: #fff;
+  color: #f39c12;
   padding: 0px 80px 0 80px;
 }
 /* line 62, main.sass */
+.scrollHeader a {
+  transition: 0.3s linear;
+  color: #f39c12;
+}
+/* line 65, main.sass */
 .scrollHeader .active {
-  padding-bottom: 5px;
+  padding-bottom: 4px;
 }
 
-/* line 65, main.sass */
+/* line 68, main.sass */
 #header-logo {
   padding-top: 7px;
   font-size: 2.7rem;
@@ -74,14 +78,14 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
   float: left;
 }
 
-/* line 71, main.sass */
+/* line 74, main.sass */
 #nav-items {
   padding-top: 5px;
   margin: 0;
   float: right;
 }
 
-/* line 76, main.sass */
+/* line 79, main.sass */
 .nav-item {
   display: block;
   margin-left: 1.2rem;
@@ -90,7 +94,7 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
   text-transform: uppercase;
 }
 
-/* line 83, main.sass */
+/* line 86, main.sass */
 .panel {
   margin: 0;
   width: 100vw;
@@ -99,16 +103,16 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
   box-sizing: border-box;
   text-align: center;
 }
-/* line 90, main.sass */
+/* line 93, main.sass */
 .panel p {
   text-align: left;
 }
-/* line 92, main.sass */
+/* line 95, main.sass */
 .panel h2 {
   margin-bottom: 45px;
 }
 
-/* line 95, main.sass */
+/* line 98, main.sass */
 #splash {
   color: #fff;
   height: 60vh;
@@ -122,28 +126,29 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
   justify-content: center;
   -ms-flex-pack: center;
 }
-/* line 105, main.sass */
+/* line 108, main.sass */
 #splash button {
   margin: 1rem 1.25rem 1rem 1.25rem;
   color: #fff;
   transition: all 0.5s ease;
 }
-/* line 109, main.sass */
+/* line 112, main.sass */
 #splash button:hover {
   background-color: #f39c12;
   color: #fafafa;
 }
 
-/* line 113, main.sass */
+/* line 116, main.sass */
 #logo-img {
   margin-bottom: 25px;
 }
-/* line 115, main.sass */
+/* line 118, main.sass */
 #logo-img img {
   max-width: 720px;
+  width: 75%;
 }
 
-/* line 118, main.sass */
+/* line 122, main.sass */
 #about-content {
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -153,7 +158,7 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
   -ms-flex-pack: center;
 }
 
-/* line 121, main.sass */
+/* line 125, main.sass */
 div#about {
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -161,16 +166,16 @@ div#about {
   align-items: center;
   justify-content: center;
   -ms-flex-pack: center;
-  background-image: -webkit-linear-gradient(top, rgba(55, 105, 165, 0.5), #ffffff);
+  background-image: -webkit-linear-gradient(top, rgba(55, 105, 165, 0.5), #fafafa);
 }
-/* line 125, main.sass */
+/* line 128, main.sass */
 div#about strong {
   font-size: 1.1em;
   font-weight: 400;
   color: #f39c12;
 }
 
-/* line 130, main.sass */
+/* line 133, main.sass */
 div#bitcoin {
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -178,23 +183,32 @@ div#bitcoin {
   align-items: center;
   justify-content: center;
   -ms-flex-pack: center;
+  background-color: #fafafa;
 }
 
-/* line 133, main.sass */
+/* line 137, main.sass */
 #bitcoin-img {
   position: relative;
 }
 
-/* line 136, main.sass */
+/* line 140, main.sass */
 img#bitcoin-network {
-  height: 490px;
   position: absolute;
-  left: 0;
-  top: 0;
+  object-fit: cover;
+  max-height: 560px;
+  left: 60px;
+  top: -40px;
   width: auto;
 }
 
-/* line 143, main.sass */
+/* line 148, main.sass */
 div#placeholder {
   height: 2000px;
+}
+
+@media (max-device-width: 1024px) {
+  /* line 152, main.sass */
+  #bitcoin-img {
+    display: none;
+  }
 }
