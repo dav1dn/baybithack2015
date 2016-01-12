@@ -8,49 +8,63 @@ html {
   box-sizing: inherit;
 }
 
-/* line 10, ../sass/style.scss */
+/* line 15, ../sass/style.scss */
 body {
   width: 100%;
   font-family: 'Lato', sans-serif;
-  color: #333;
+  color: #353535;
   margin: 0;
 }
-
-/* line 16, ../sass/style.scss */
-#navbar {
-  width: 100%;
-  padding: 25px 80px 0px 80px;
-  position: fixed;
-  z-index: 6969;
-  line-height: 36px;
-  transition: 0.3s linear;
+@media screen and (max-width: 640px) {
+  /* line 15, ../sass/style.scss */
+  body {
+    font-size: 10pt;
+  }
 }
 
 /* line 25, ../sass/style.scss */
+#navbar {
+  width: 100%;
+  padding: 0px 80px 0px 80px;
+  background-color: #561643;
+  position: fixed;
+  z-index: 6969;
+  line-height: 32px;
+  transition: 0.3s linear;
+}
+
+/* line 34, ../sass/style.scss */
+#nav {
+  width: 80%;
+  position: relative;
+  margin: 0 auto;
+}
+
+/* line 36, ../sass/style.scss */
 #nav-items {
-  padding-top: 5px;
   margin: 0;
   float: right;
 }
 
-/* line 31, ../sass/style.scss */
+/* line 41, ../sass/style.scss */
 #navbar-logo {
   float: left;
 }
 
-/* line 35, ../sass/style.scss */
+/* line 45, ../sass/style.scss */
 .nav-item {
   display: block;
-  margin-left: 1.77689em;
+  margin-left: 1.5625em;
   margin-bottom: 0;
   float: left;
 }
 
-/* line 41, ../sass/style.scss */
+/* line 52, ../sass/style.scss */
 .panel {
-  max-width: 68em;
+  max-width: 60em;
   margin-left: auto;
   margin-right: auto;
+  padding: 30px;
 }
 /* line 20, /home/david/projects/baybithack2015/node_modules/bourbon/app/assets/stylesheets/addons/_clearfix.scss */
 .panel::after {
@@ -59,9 +73,10 @@ body {
   display: table;
 }
 
-/* line 45, ../sass/style.scss */
+/* line 57, ../sass/style.scss */
 #splash {
   height: 80vh;
+  min-height: 520px;
   display: -webkit-box;
   display: -moz-box;
   display: box;
@@ -80,13 +95,200 @@ body {
   -ms-flex-align: center;
 }
 
-/* line 53, ../sass/style.scss */
+/* line 64, ../sass/style.scss */
 #splash-text {
-  font-size: 5.61023em;
+  font-size: 4.76837em;
   font-weight: 600;
 }
+@media screen and (max-width: 640px) {
+  /* line 64, ../sass/style.scss */
+  #splash-text {
+    font-size: 2.44141em;
+  }
+}
 
-/* line 58, ../sass/style.scss */
+/* line 72, ../sass/style.scss */
+#splash-subtext {
+  font-size: 1.5625em;
+  margin: 1.1em 0;
+}
+
+/* line 77, ../sass/style.scss */
+#underscore {
+  -webkit-animation: 1s blink step-end infinite;
+  -moz-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite;
+}
+@-webkit-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #353535;
+  }
+}
+@-moz-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #353535;
+  }
+}
+@keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #353535;
+  }
+}
+/* line 88, ../sass/style.scss */
+.button {
+  margin-top: 1.4em;
+  width: 140px;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  box-flex: 1;
+  -webkit-flex: 1 1 auto;
+  -moz-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  text-align: center;
+  overflow: hidden;
+  transition: .25s linear;
+  font-size: 0.8em;
+}
+/* line 99, ../sass/style.scss */
+.button:hover {
+  cursor: pointer;
+  background-color: #ff9900;
+}
+
+/* line 103, ../sass/style.scss */
+.text-accent {
+  color: #ff9900;
+}
+
+/* line 107, ../sass/style.scss */
+.text-accent2 {
+  color: #005377;
+}
+
+/* line 111, ../sass/style.scss */
 #anim-text {
   color: #ff9900;
 }
+
+/* line 114, ../sass/style.scss */
+.panel-container {
+  margin: 3.33333%;
+  padding: 4% 0 4% 0;
+}
+
+/* line 119, ../sass/style.scss */
+#about {
+  background-color: #005377;
+}
+
+/* line 124, ../sass/style.scss */
+#about-logo {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 82.94039%;
+  margin-right: 0;
+}
+/* line 89, /home/david/projects/baybithack2015/node_modules/bourbon-neat/app/assets/stylesheets/grid/_span-columns.scss */
+#about-logo:last-child {
+  margin-right: 0;
+}
+/* line 127, ../sass/style.scss */
+#about-logo img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 640px) {
+  /* line 124, ../sass/style.scss */
+  #about-logo {
+    float: left;
+    display: block;
+    margin-right: 4.82916%;
+    width: 100%;
+  }
+  /* line 89, /home/david/projects/baybithack2015/node_modules/bourbon-neat/app/assets/stylesheets/grid/_span-columns.scss */
+  #about-logo:last-child {
+    margin-right: 0;
+  }
+}
+
+/* line 137, ../sass/style.scss */
+#about-text {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 91.4702%;
+  margin-right: 0;
+  padding-top: 15px;
+  color: #f7f7f7;
+  font-size: 1.25em;
+  font-weight: 300;
+}
+/* line 89, /home/david/projects/baybithack2015/node_modules/bourbon-neat/app/assets/stylesheets/grid/_span-columns.scss */
+#about-text:last-child {
+  margin-right: 0;
+}
+@media screen and (max-width: 640px) {
+  /* line 137, ../sass/style.scss */
+  #about-text {
+    float: left;
+    display: block;
+    margin-right: 4.82916%;
+    width: 100%;
+  }
+  /* line 89, /home/david/projects/baybithack2015/node_modules/bourbon-neat/app/assets/stylesheets/grid/_span-columns.scss */
+  #about-text:last-child {
+    margin-right: 0;
+  }
+}
+
+/* line 149, ../sass/style.scss */
+#bitcoin {
+  background-color: #114b5f;
+}
+
+/* line 153, ../sass/style.scss */
+#bitcoin-text {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 91.4702%;
+  color: #f7f7f7;
+  font-size: 1.25em;
+}
+/* line 89, /home/david/projects/baybithack2015/node_modules/bourbon-neat/app/assets/stylesheets/grid/_span-columns.scss */
+#bitcoin-text:last-child {
+  margin-right: 0;
+}
+
+/*#about-affs {*/
+/*@include span-columns(12);*/
+/*padding-top: 15px;*/
+/*text-align: center;*/
+/*.aff-logo {*/
+/*@include span-columns(4);*/
+/*@include shift(2)*/
+/*min-height: 200px;*/
+/*@include display(flex);*/
+/*@include flex-direction(column);*/
+/*@include align-items(center);*/
+/*@include justify-content(center);*/
+/*text-align: center;*/
+/*img {*/
+/*max-width: 420px;*/
+/*}*/
+/*}*/
+/*}*/
