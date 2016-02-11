@@ -23,9 +23,10 @@ body {
     }
 }
 #navbar {
+    display: none;
     width: 100%;
     padding: 0px 80px 0px 80px;
-    background-color: $accent-maroon;
+    background-color: #fff;
     position: fixed;
     z-index: 6969;
     line-height: 32px;
@@ -57,6 +58,7 @@ body {
 #splash {
     height: 80vh;
     min-height: 520px;
+    margin: 30px 0 30px 0;
     @include display(flex);
     @include align-items(center);
 }
@@ -82,7 +84,7 @@ body {
     }
 
 }
-
+.panel-container { position: relative; }
 
 
 .button {
@@ -111,11 +113,22 @@ body {
 #anim-text {
     color: $accent-orng;
 }
+
 .panel-container { 
-    margin: 3.33333%;
-    padding: 4% 0 4% 0;
+    padding: 60px 0 80px 0;
 }
 
+.hipster { 
+    background: inherit;
+    height: 100px;
+    width: 110%;
+    left: -10px;
+    position: absolute;
+    z-index: 2;
+}
+
+.hipster.top { transform: rotate(-1.5deg); top: -30px; }
+.hipster.bottom { transform: rotate(-1.5deg); bottom: -20px; }
 #about {
     background-color: $accent-lblu;
 }
@@ -127,14 +140,14 @@ body {
     img {
         width: 100%;
         height: auto;
-        margin-bottom: 30px;
     }
     @include media($mobile) {
         @include span-columns(6);
+        
     } 
 }
 
-#about-text {
+.panel-text {
     @include span-columns(11);
     @include omega();
     padding-top: 15px;

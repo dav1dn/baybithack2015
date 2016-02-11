@@ -1,5 +1,5 @@
 (function () {
-    var words = ['cryptocurrencies', 'blockchains', 'bitcoin', 'digital currency'];
+    var words = ['cryptocurrencies', 'blockchains', 'bitcoin', 'digital currencies'];
     var currentIndex = 3;
     var colors = ['#004777', '#efd28d', '#00afb5', '#a30000'];
     var element = document.getElementById('anim-text');
@@ -13,7 +13,7 @@
         element.innerHTML = '';
         element.style.backgroundColor = '';
         element.style.color = '#ff9900';
-        setTimeout(typeNewWord, Math.random() * 3000 + 500);
+        setTimeout(typeNewWord, Math.random() * 2000 + 500);
     }
 
     function typeNewWord() {
@@ -26,7 +26,6 @@
             if (index >= word.length) {
                 setTimeout(highlightCurrent, Math.random() * 2000 + 2000);
             } else {
-                console.log(element.innerHTML + ' + ' + word[index] );
                 element.innerHTML = element.innerHTML + word[index];
                 index++;
                 setTimeout(function() {TypeNextLetter(word, index) }, Math.random()*250);
